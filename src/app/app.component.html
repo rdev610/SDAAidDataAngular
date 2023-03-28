@@ -1,0 +1,58 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<form (submit)="onSubmit()">
+  <!----The name field of the form-->
+  <div>
+    <p>      </p>
+    <label for="name">Name: </label>
+    <input type="text" id="name" name="name" maxlength="150" required>
+    <p>      </p>
+  </div>
+  <!----The age field of the form-->
+<div>
+  <label for="age">Age: </label>
+  <input type="number" id="age" name="age" max="124" required>
+  <p>      </p>
+</div>
+<!----The season field of the form-->
+<div>
+  <label for="season">Favorite Season: </label>
+  <select id="season" name="season" required>
+    <option value="Fall">Fall</option>
+    <option value="Winter">Winter</option>
+    <option value="Spring">Spring</option>
+    <option value="Summer">Summer</option>
+  </select>
+  <p>      </p>
+</div>
+<!----The car field of the form-->
+<div>
+  <label>Can you drive a car? </label>
+  <label><input type="radio" name="canDrive" value="Yes" required> Yes   </label> 
+  <label><input type="radio" name="canDrive" value="No" required>No</label>
+  <p>      </p>
+</div>
+<!----The submit button -->
+<div>
+  <button type="submit">Submit</button>
+</div>
+</form>
+
+<p *ngIf="enteredData">{{ enteredData }}</p>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
